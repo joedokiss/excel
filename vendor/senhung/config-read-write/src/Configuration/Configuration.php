@@ -24,17 +24,21 @@ class Configuration
     public static function initializeConfigs(
         string $configPath = '.env',
         bool $absolutePath = true,
-        string $separator = '='
+        string $separator = '=',
+        string $ownPath //self defined path
     ): void {
         /* Set path */
-        self::$path = ($absolutePath ? $_SERVER['DOCUMENT_ROOT'] : '') . $configPath;
+        //self::$path = ($absolutePath ? $_SERVER['DOCUMENT_ROOT'] : '') . $configPath;
+
+        self::$path = ($absolutePath ? $_SERVER['DOCUMENT_ROOT'] : $ownPath) . $configPath;
 
         /* Change separator */
         self::$separator = $separator;
 
         /* Check if file exists */
         if (!file_exists(self::$path)) {
-            return;
+            //return;
+            throw new Exception("The file is not existed!");
         }
 
         /* Get content in config file */
