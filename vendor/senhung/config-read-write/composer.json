@@ -1,0 +1,20 @@
+{
+    "name": "senhung/config-read-write",
+    "description": "A package for reading and writing config file",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Senhung Wong",
+            "email": "0x53656e@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Senhung\\Config\\": "src/Configuration/"
+        },
+        "files": ["src/Configuration/Configuration.php"]
+    },
+    "require": {
+        "php": ">=7.1.0"
+    }
+}

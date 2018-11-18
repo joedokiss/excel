@@ -48,4 +48,5 @@ return array(
     '883af48563631547925fa4c3b48ead07' => $vendorDir . '/markbaker/complex/classes/src/operations/multiply.php',
     'f190e3308e6ca23234a2875edc985c03' => $vendorDir . '/markbaker/complex/classes/src/operations/divideby.php',
     'ac9e33ce6841aa5bf5d16d465a2f03a7' => $vendorDir . '/markbaker/complex/classes/src/operations/divideinto.php',
+    'cb1c83112f27b4ca31d101e4faf01417' => $vendorDir . '/senhung/config-read-write/src/Configuration/Configuration.php',
 );

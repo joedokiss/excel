@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f956fb98c50bce14175dba6cce7d18e6",
+    "content-hash": "7cb1b1d29ae40328c7d919f6e7be0291",
     "packages": [
         {
             "name": "markbaker/complex",
@@ -277,6 +277,45 @@
                 "simple-cache"
             ],
             "time": "2017-10-23T01:57:42+00:00"
+        },
+        {
+            "name": "senhung/config-read-write",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/senhungwong/config-read-write.git",
+                "reference": "18cedc440046fc35319fdd84ab4a83a354fdfcd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/senhungwong/config-read-write/zipball/18cedc440046fc35319fdd84ab4a83a354fdfcd0",
+                "reference": "18cedc440046fc35319fdd84ab4a83a354fdfcd0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Senhung\\Config\\": "src/Configuration/"
+                },
+                "files": [
+                    "src/Configuration/Configuration.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Senhung Wong",
+                    "email": "0x53656e@gmail.com"
+                }
+            ],
+            "description": "A package for reading and writing config file",
+            "time": "2018-05-15T14:54:49+00:00"
         }
     ],
     "packages-dev": [],

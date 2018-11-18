@@ -1,0 +1,18 @@
+<?php
+
+require_once 'src/Configuration/Configuration.php';
+//require_once 'vendor/autoload.php';
+
+use Senhung\Config\Configuration;
+
+/* Read config APP_NAME */
+echo Configuration::read('APP_NAME') . "\n";
+
+/* Read config VERSION */
+echo Configuration::read('VERSION') . "\n";
+
+/* Set APP_NAME to config-write */
+Configuration::set('APP_NAME', 'config-write');
+
+/* Read APP_NAME again to see the changes */
+echo Configuration::read('APP_NAME') . "\n";
